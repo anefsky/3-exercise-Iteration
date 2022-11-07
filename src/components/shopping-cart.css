@@ -6,6 +6,10 @@ body {
   font-family: sans-serif;
 }
 
+.cart table {
+  border-spacing: 0;
+}
+
 .cart h2 {
   margin: 2rem 0;
   text-align: center;
@@ -16,15 +20,44 @@ body {
   margin-bottom: 2rem;
 }
 
+.cart th {
+  border-bottom: 2px solid black;
+}
+
 .cart .cart-row td {
   padding: 8px 0px;
+  border-bottom: 1px solid black;
 }
+
+.cart .cart-row td:nth-child(2) {
+  width: 300px;
+}
+
+.cart th:nth-child(2) {
+  text-align: left;
+}
+
+.cart th:nth-child(3) {
+  text-align: right;
+  padding-right: 50px;
+}
+
+.cart .cart-row td:nth-child(3) {
+  width: 200px;
+  text-align: right;
+  padding-right: 50px;
+}
+.cart .cart-row:last-child td {
+  border-bottom: none;
+}
+
 .cart .cart-row td:first-of-type {
   width: var(--image-width);
 }
 
 .cart .product-thumb {
   width: var(--image-width);
+  padding-right: 50px;
 }
 
 .cart .actions {
